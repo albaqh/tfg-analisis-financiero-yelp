@@ -16,11 +16,14 @@ En particular, el estudio busca:
 
 El análisis se realiza sobre rentabilidades logarítmicas mensuales correspondientes al período enero de 2015 – diciembre de 2025.
 
-## Contenido Técnico (Estructura del Notebook)
+## Estructura del Notebook
 El análisis se divide en las etapas desarrolladas en el archivo principal:
-* **S01-S02:** Carga de datos y estimación del modelo CAPM básico.
-* **S03-S04:** Diagnóstico de residuos y tratamiento de *outliers* mediante variables de intervención.
-* **S05-S06:** Análisis de cambios estructurales, selección del modelo final y análisis de estabilidad paramétrica.
+* **S01**: Carga de datos de Yelp y del índice de referencia Russell 2000.
+* **S02**: Construcción de primas de riesgo y estimación del CAPM básico.
+* **S03**: Diagnóstico de los residuos (normalidad, heterocedasticidad, autocorrelación).
+* **S04**: Identificación y tratamiento de valores atípicos.
+* **S05**: Análisis de cambio estructural y selección del modelo final.
+* **S06**: Estudio de la estabilidad paramétrica del modelo.
 
 ## Herramientas
 * **Librerías:** `statsmodels` (regresiones robustas), `pandas`, `matplotlib`, `seaborn`,`yfinance` .
